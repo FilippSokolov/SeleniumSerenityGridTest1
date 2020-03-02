@@ -41,6 +41,9 @@ public class Test01 {
 
         homePage.login("epam", "1234");
 
+        assertEquals("https://epam.github.io/JDI/", driver.findElement(By.xpath(".//main//h3[@class='text-center']/a"))
+                .getAttribute("href"));
+
         driver.close();
 
     }

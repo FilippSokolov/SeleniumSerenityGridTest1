@@ -44,6 +44,11 @@ public class TestSelenide01 {
         $$(By.xpath("//*[@id='search-results']//a[contains(text(),'selenide.org')]"));
         $$("#search-results a").findBy(text("selenide.org")).click();
 
+        $x("//div").shouldBe(Condition.cssValue("border-bottom-width", "10px"));
+        $x("//div").shouldNotBe(Condition.cssValue("border-bottom-width", "10px"));
+        $(By.tagName("img")).getAttribute("title");
+
+
 
         SelenideElement mainTitle = $("h3.main-title");
         mainTitle.shouldHave(Condition.text("EPAM FRAMEWORK WISHES..."));
