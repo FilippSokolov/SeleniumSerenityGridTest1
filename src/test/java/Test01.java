@@ -1,3 +1,5 @@
+import io.qameta.allure.Issue;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,10 +17,23 @@ public class Test01 {
 
 
     @BeforeClass
+    @Step
     public void beforeClass() {
+        System.setProperty("allure.results.directory", "path/to/directory");
         //   setProperty("webdriver.chrome.driver", "src\main\\resources\\chromedriver.exe");
+
+        System.setProperty("allure.link.mylink.pattern", "https://example.org/mylink/{}");
+        System.setProperty("allure.link.issue.pattern", "https://youtrack.jetbrains.com/issue/{}");
+        System.setProperty("allure.link.tms.pattern", "https://example.org/tms/{}");
+
     }
 
+    @Step
+    public void some() {
+
+    }
+
+    @Issue("IDEA-234005")
     @Test
     public void action1() {
 
@@ -28,6 +43,9 @@ public class Test01 {
         driver.manage().timeouts().pageLoadTimeout(10000, TimeUnit.MILLISECONDS);
 //        String hadle = driver.getWindowHandle();
 //        driver.switchTo().window(hadle);
+
+        beforeClass();
+        some();
 
         driver.navigate().to("http://epam.github.io/JDI/index.html");
 

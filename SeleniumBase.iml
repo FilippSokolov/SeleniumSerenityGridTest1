@@ -3,10 +3,10 @@
   <component name="AutoImportedSourceRoots">
     <option name="directories">
       <list>
-        <option value="C:\Users\Filipp.Sokolov\IdeaProjects\SeleniumBase/src/main/java" />
-        <option value="C:\Users\Filipp.Sokolov\IdeaProjects\SeleniumBase/src/main/kotlin" />
-        <option value="C:\Users\Filipp.Sokolov\IdeaProjects\SeleniumBase/src/test/java" />
-        <option value="C:\Users\Filipp.Sokolov\IdeaProjects\SeleniumBase/src/test/kotlin" />
+        <option value="C:\Users\Filipp.Sokolov\IdeaProjects\SeleniumBaseAllure/src/main/java" />
+        <option value="C:\Users\Filipp.Sokolov\IdeaProjects\SeleniumBaseAllure/src/main/kotlin" />
+        <option value="C:\Users\Filipp.Sokolov\IdeaProjects\SeleniumBaseAllure/src/test/java" />
+        <option value="C:\Users\Filipp.Sokolov\IdeaProjects\SeleniumBaseAllure/src/test/kotlin" />
       </list>
     </option>
   </component>
@@ -52,6 +52,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -122,5 +123,6 @@
     <orderEntry type="library" name="Maven: io.qameta.allure:allure-model:2.12.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.tika:tika-core:1.20" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.jooq:joor-java-8:0.9.10" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.8.10" level="project" />
   </component>
 </module>
